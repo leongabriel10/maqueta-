@@ -38,7 +38,7 @@ const crearTarjetas = (juegos) => {
 
         const subTitulo = document.createElement('p');
         subTitulo.classList.add('card-text');
-        subTitulo.textContent = description || 'Descripción no disponible';
+        subTitulo.textContent = description || '';
 
         const btnMostrar = document.createElement('button');
         btnMostrar.classList.add('btn', 'btn-danger');

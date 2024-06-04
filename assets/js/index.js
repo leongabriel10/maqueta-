@@ -1,6 +1,6 @@
 const games = ( ) => {
     return new Promise ((resolve,reject) =>{
-        fetch (`https://api.rawg.io/api/games`)
+        fetch (`https://api.rawg.io/docs/?format=openapi`)
         .then((juegos) =>{
             if (!juegos.ok) { 
                 throw new Error ("error") 
@@ -26,4 +26,4 @@ Llamarjuego()
     .catch((error) =>{
         console.log(error);
     })
-    
+
