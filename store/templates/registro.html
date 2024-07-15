@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{%load static%}
+{% load crispy_forms_tags%}
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Sesion</title> 
+    <link rel="stylesheet" href="{%static 'css/register.css'%}">
+</head>
+<body class="colfond">
+    
+
+    <br>
+    <div class="contenedor-register">
+        <h1 class="centrar-texto" style="color: black;"> Registro de Usuario</h1>
+    <form action="" method="post">
+        {%csrf_token%}
+        <div class="Name">
+            <input type="text" required>
+            <label for="Name"> Nombre Completo</label>
+        </div>
+        <div class="Email">
+            <input type="text" required>
+            <label for="Email"> Correo Electronico</label>
+        </div>
+        <div class="password">
+            <input type="text"required>
+            <label for="password">Contraseña</label>
+        </div>
+        <input type="submit" value="Registrarse">
+        <div>
+            ya me registre<a href="#">Inicio</a>
+        </div>
+ 
+    </form>
+    </div>
+</body>
+</html>

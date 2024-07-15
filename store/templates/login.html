@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+{% load static%}
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title >iniciar Sesión </title>
+    <link rel="stylesheet" href="{%static 'css/fondo.css'%}"  >
+     
+</head>
+<body class="colfond">
+ 
+
+    <div class="contenedor-login">
+        <h1 class="centrar-texto" style="color: rgb(0, 0, 0);">Iniciar Sesión</h1>
+        <form method="post">
+            {% csrf_token%} 
+            <div class="Username"> 
+                <input type="text" required>
+                <label for="Username"> Nombre de Usuario</label>
+            </div>
+            <div class="Username">
+                <input type="password" required>
+                <label for="password"> Contraseña</label>
+            </div>
+            <div class="recordar"> ¿Olvido su Contraseña? </div>
+            <input type="submit" value="Iniciar Sesión" >
+            <div>
+                quiero hacer el <a href="registro.html"> Registro</a>   
+            </div>
+        </form>
+    </div>        
+    
+
+
+</body>
+</html>

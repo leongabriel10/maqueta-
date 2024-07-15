@@ -1,0 +1,36 @@
+.colfond{
+    background-image: url("../img/mario.jpg"); 
+}
+
+     .contenedor{
+            max-width: 80%;
+            margin: 0 auto;
+        }
+
+        .centrar-texto{
+            text-align: center
+        
+            ;
+        }
+
+        .distancia-arriba-1{
+            margin-top: 1rem;
+        }
+        .distancia-arriba-2{
+            margin-top: 1.4rem;
+        }
+        .distancia-arriba-3{
+            margin-top: 1.8rem;
+        }
+
+        .distancia-abajo-1{
+            margin-top: 1rem;
+        }
+
+        .distancia-abajo-2{
+            margin-top: 1.4rem;
+        }
+        .distancia-abajo-3{
+            margin-top: 1.8rem;
+        }
+    
